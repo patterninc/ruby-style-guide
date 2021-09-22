@@ -1,0 +1,17 @@
+require:
+  - rubocop-rails
+  - rubocop-rspec
+  - rubocop-performance
+  - rubocop-sequel
+  - rubocop-thread_safety
+
+AllCops:
+  TargetRubyVersion: 2.5
+  DisplayCopNames: true
+  UseCache: true
+  NewCops: enable
+
+  Exclude:
+    - node_modules/**/*
+    - bower_components/**/*
+    - vendor/**/*
