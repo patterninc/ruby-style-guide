@@ -1,2 +1,2 @@
-# ruby-style-guide
-Ruby Style Guide for Pattern
+# Ruby Style Guide
+Ruby Style Guide for Pattern Ruby Projects
