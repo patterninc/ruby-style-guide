@@ -38,6 +38,10 @@ Ruby Style Guide for Pattern Ruby Projects
         name: Static Code Analysis
         command: bundle exec rubocop
     ```
+1. Add this to your .gitignore file
+    ```
+    .rubocop-https---raw-githubusercontent-com-patterninc-ruby-style-guide-*
+    ```
 # Updating Ruby Style Guide
 When you modify rubocop.yml, all consuming repositories would start getting voilations depending on the rules you change. Whenever this file is updated, we need to regenerate .rubocop_todo.yml in all projects. This will add newly discovered voiloations into .rubocop_todo.yml file and prevent builds from breaking.
 
