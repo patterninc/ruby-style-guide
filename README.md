@@ -24,6 +24,13 @@ Ruby Style Guide for Pattern Ruby Projects
     - .rubocop_todo.yml
     ```
 
+    If you want latest version:
+    ```yaml
+    inherit_from:
+    - https://raw.githubusercontent.com/patterninc/ruby-style-guide/main/rubocop.yml
+    - .rubocop_todo.yml
+    ```
+
 1. Run the below command to generate your todo. This will put all existing violations into TODO file which will let you ignore them for intital setup. This shouldn't be a practice to run it to exclude your violations. 
     ```bash
     rubocop --auto-gen-config --auto-gen-only-exclude --exclude-limit 10000
