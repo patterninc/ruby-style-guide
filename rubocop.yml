@@ -10,10 +10,7 @@ require:
 AllCops:
   TargetRubyVersion: 2.5
   DisplayCopNames: true
-  UseCache: true
   NewCops: enable
-  CacheRootDirectory: .rubocop_cache/
-  MaxFilesInCache: 1000
   Exclude:
     - node_modules/**/*
     - bower_components/**/*
