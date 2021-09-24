@@ -1,6 +1,5 @@
 # Information for creating the rubocop.yml was taken from this location http://rubocop.readthedocs.io/en/latest/configuration/
 # Rules are taken from rubystyle.guide, Azure, Airbnb's Ruby Style Guide and few top starred projects on Github.
-
 require:
   - rubocop-rails
   - rubocop-rspec
@@ -18,3 +17,43 @@ AllCops:
     - node_modules/**/*
     - bower_components/**/*
     - vendor/**/*
+
+# Too many voilations for Missing top-level documentation comment for class. This rule doesn't make sense to enforce. 
+# Airbnb recommends it but Ruby Style guide says no comments. They recommend self-documenting code.
+Style/Documentation:
+  Enabled: false
+
+# This doesn't look like our style. e.g: Use @minute.zero? instead of @minute == 0.
+Style/NumericPredicate:
+  Enabled: false
+
+# Picked from Airbnb Style Guide
+Layout/EmptyLinesAroundBlockBody:
+  EnforcedStyle: no_empty_lines
+
+# Picked from Airbnb Style Guide. Rationale: https://rubystyle.guide/#max-line-length
+Layout/LineLength:
+  Max: 120
+
+# This doesn't look like our style.
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Metrics/MethodLength:
+  Max: 15
+
+# The guiding principle of classes is SRP, SRP can't be accurately measured by LoC
+Metrics/ClassLength:
+  Max: 1000
+
+Style/SafeNavigation:
+  Enabled: false
+
+# https://rubystyle.guide/#empty-lines-between-methods
+Layout/EmptyLineBetweenDefs:
+  NumberOfEmptyLines: 1
+
+# No space makes the method definition shorter and differentiates
+# from a regular assignment.
+Layout/SpaceAroundEqualsInParameterDefault:
+  EnforcedStyle: no_space
