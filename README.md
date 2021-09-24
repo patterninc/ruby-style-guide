@@ -2,7 +2,7 @@
 Ruby Style Guide for Pattern Ruby Projects
 
 # Installation
-1. Add below gems to your gemfile. If you have remote, development and test group in your gemfile, please add these gems to all envs.
+1. Add below gems to your Gemfile. If you have remote, development and test group in your Gemfile, please add these gems to all envs.
     ```ruby
     gem 'rubocop'
     gem 'rubocop-thread_safety'
@@ -20,7 +20,7 @@ Ruby Style Guide for Pattern Ruby Projects
 1. Add below code to your .rubocop.yml
     ```yaml
     inherit_from:
-    - https://raw.githubusercontent.com/patterninc/ruby-style-guide/main/rubocop.yml
+    - https://raw.githubusercontent.com/patterninc/ruby-style-guide/1.0.0/rubocop.yml
     - .rubocop_todo.yml
     ```
 
