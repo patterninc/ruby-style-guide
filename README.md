@@ -18,16 +18,17 @@ Ruby Style Guide for Pattern Ruby Projects
     ```
 
 1. Add below code to your .rubocop.yml
-    ```yaml
-    inherit_from:
-    - https://raw.githubusercontent.com/patterninc/ruby-style-guide/1.0.0/rubocop.yml
-    - .rubocop_todo.yml
-    ```
-
-    If you want latest version:
+    Always go with the latest version.
     ```yaml
     inherit_from:
     - https://raw.githubusercontent.com/patterninc/ruby-style-guide/main/rubocop.yml
+    - .rubocop_todo.yml
+    ```
+    
+    For some reason, if you want to go to the previous version, you can use it like this:
+    ```yaml
+    inherit_from:
+    - https://raw.githubusercontent.com/patterninc/ruby-style-guide/1.0.0/rubocop.yml
     - .rubocop_todo.yml
     ```
 
