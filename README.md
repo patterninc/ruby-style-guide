@@ -51,13 +51,16 @@ Ruby Style Guide for Pattern Ruby Projects
     ```
     .rubocop-https---raw-githubusercontent-com-patterninc-ruby-style-guide-*
     ```
-# Updating Ruby Style Guide
+# Updating Project's Ruby Style Guide
 When you modify rubocop.yml, all consuming repositories would start getting voilations depending on the rules you change. Whenever this file is updated, we need to regenerate .rubocop_todo.yml in all projects. This will add newly discovered voiloations into .rubocop_todo.yml file and prevent builds from breaking.
 
 Regenrate todo using this command
 ```
 rubocop --auto-gen-config --auto-gen-only-exclude --exclude-limit 10000
 ```
+
+# Updating Pattern's Ruby Style Guide
+This repository follows Semantic Versioning. All changes are documented in CHANGELOG.md as per https://keepachangelog.com/.
 
 # Regenerating .rubocop_todo.yml file
 Always regenerate todo file using below command
