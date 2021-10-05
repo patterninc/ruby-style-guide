@@ -60,7 +60,7 @@ rubocop --auto-gen-config --auto-gen-only-exclude --exclude-limit 10000
 ```
 
 # Updating Pattern's Ruby Style Guide
-This repository follows Semantic Versioning. All changes are documented in CHANGELOG.md as per https://keepachangelog.com/.
+This repository follows Semantic Versioning. All changes are documented in [CHANGELOG.md](CHANGELOG.md) as per https://keepachangelog.com/.
 
 # Regenerating .rubocop_todo.yml file
 Always regenerate todo file using below command
