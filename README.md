@@ -19,7 +19,7 @@ Ruby Style Guide for Pattern Ruby Projects
 
 1. Add below code to your .rubocop.yml.
 
-Always go with the latest version.
+    Always go with the latest version.
     ```yaml
     inherit_from:
     - https://raw.githubusercontent.com/patterninc/ruby-style-guide/main/rubocop.yml
