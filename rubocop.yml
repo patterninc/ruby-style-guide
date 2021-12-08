@@ -38,7 +38,7 @@ Style/FrozenStringLiteralComment:
   Enabled: false
 
 Metrics/MethodLength:
-  Max: 15
+  Max: 40
 
 # The guiding principle of classes is SRP, SRP can't be accurately measured by LoC
 Metrics/ClassLength:
@@ -55,3 +55,13 @@ Layout/EmptyLineBetweenDefs:
 # from a regular assignment.
 Layout/SpaceAroundEqualsInParameterDefault:
   EnforcedStyle: no_space
+Metrics/AbcSize:
+  Max: 50
+Metrics/CyclomaticComplexity:
+  Max: 20
+Metrics/PerceivedComplexity:
+  Max: 20
+Metrics/BlockLength:
+  Max: 35
+Metrics/ModuleLength:
+  Max: 500
