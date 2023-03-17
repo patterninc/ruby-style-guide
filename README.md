@@ -65,5 +65,5 @@ This repository follows Semantic Versioning. All changes are documented in [CHAN
 # Regenerating .rubocop_todo.yml file
 Always regenerate todo file using below command
 ```
-rubocop --regenerate-todo --auto-gen-only-exclude --exclude-limit 10000`
+rubocop --regenerate-todo --auto-gen-only-exclude --exclude-limit 10000
 ```
