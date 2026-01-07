@@ -1,6 +1,6 @@
 # Information for creating the rubocop.yml was taken from this location http://rubocop.readthedocs.io/en/latest/configuration/
 # Rules are taken from rubystyle.guide, Azure, Airbnb's Ruby Style Guide and few top starred projects on Github.
-plugins:
+require:
   - rubocop-rails
   - rubocop-rspec
   - rubocop-performance
