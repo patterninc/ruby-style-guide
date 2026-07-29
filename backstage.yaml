@@ -1,0 +1,17 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: ruby-style-guide
+  description: 'A Onboard an Existing Repo to Backstage created via Backstage'
+  annotations:
+    repo: patterninc/ruby-style-guide
+  labels:
+    CostCenter: SHELF
+    Environment: stage
+    Name: ruby-style-guide
+    Owner: dev-integrations
+    Department: CONNECT
+    CreatedBy: Backstage
+spec:
+  type: service
+  system: shelf
